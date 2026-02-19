@@ -10,7 +10,7 @@ import { applySeo, injectSchema } from '@/lib/seo';
 const faqItems = [
   {
     q: '¿Cuánto cuesta una valoración de TDAH en Cancún?',
-    a: 'La valoración neuropsicológica de TDAH en Cancún con la Psic. Karen Trujillo tiene un costo de $7,000 pesos mexicanos (MXN). Este precio incluye todas las sesiones del proceso (4 a 5 citas), la aplicación de instrumentos estandarizados internacionales, el análisis clínico y el informe final con cédula federal 11009616.',
+    a: 'La valoración neuropsicológica de TDAH en Cancún con la Neuropsicóloga Karen Trujillo tiene un costo de $7,000 pesos mexicanos (MXN). Este precio incluye todas las sesiones del proceso (4 a 5 citas), la aplicación de instrumentos estandarizados internacionales, el análisis clínico y el informe final con cédula federal 11009616.',
   },
   {
     q: '¿Se puede pagar la valoración de TDAH en parcialidades?',
@@ -22,7 +22,7 @@ const faqItems = [
   },
   {
     q: '¿El informe de valoración de TDAH tiene validez ante la escuela o el IMSS?',
-    a: 'Sí. El informe emitido por la Psic. Karen Trujillo está respaldado por cédula profesional federal 11009616 y tiene validez ante instituciones educativas, SEP, IMSS y dependencias gubernamentales. Puede usarse para solicitar adecuaciones curriculares, apoyos escolares o trámites institucionales.',
+    a: 'Sí. El informe emitido por la Neuropsicóloga Karen Trujillo está respaldado por cédula profesional federal 11009616 y tiene validez ante instituciones educativas, SEP, IMSS y dependencias gubernamentales. Puede usarse para solicitar adecuaciones curriculares, apoyos escolares o trámites institucionales.',
   },
   {
     q: '¿Qué pasa si solo quiero una opinión rápida sobre si mi hijo tiene TDAH?',
@@ -69,11 +69,11 @@ const comparativa = [
 export default function CuantoCuestaValoracionTDAH() {
   useEffect(() => {
     const cleanSeo = applySeo({
-      title: '¿Cuánto cuesta una valoración de TDAH en Cancún? | Psic. Karen Trujillo',
+      title: '¿Cuánto cuesta una valoración de TDAH en Cancún? | Neuropsicóloga Karen Trujillo',
       description: 'La valoración neuropsicológica de TDAH en Cancún cuesta $7,000 MXN. Incluye 4-5 sesiones, instrumentos estandarizados (CONNERS-3, WISC-V) e informe con cédula federal 11009616 válido ante SEP e IMSS.',
       canonical: 'https://psicologakarentrujillo.com.mx/blog/cuanto-cuesta-valoracion-tdah-cancun',
       ogTitle: '¿Cuánto cuesta una valoración de TDAH en Cancún? | Karen Trujillo',
-      ogDescription: 'Precio de la valoración de TDAH en Cancún: $7,000 MXN. Pago distribuido en sesiones. Informe con cédula 11009616 válido ante SEP e IMSS. Psic. Karen Trujillo.',
+      ogDescription: 'Precio de la valoración de TDAH en Cancún: $7,000 MXN. Pago distribuido en sesiones. Informe con cédula 11009616 válido ante SEP e IMSS. Neuropsicóloga Karen Trujillo.',
     });
 
     const cleanSchema = injectSchema('schema-blog-costo-tdah', {
@@ -93,13 +93,13 @@ export default function CuantoCuestaValoracionTDAH() {
             hasCredential: { '@type': 'EducationalOccupationalCredential', credentialId: '11009616' },
             worksFor: {
               '@type': 'MedicalBusiness',
-              name: 'Psic. Karen Trujillo — Neuropsicología',
+              name: 'Neuropsicóloga Karen Trujillo — Neuropsicología',
               address: { '@type': 'PostalAddress', addressLocality: 'Cancún', addressRegion: 'Quintana Roo', addressCountry: 'MX' },
             },
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Psic. Karen Trujillo — Neuropsicología TDAH y Autismo',
+            name: 'Neuropsicóloga Karen Trujillo — Neuropsicología TDAH y Autismo',
             url: 'https://psicologakarentrujillo.com.mx',
           },
           about: { '@type': 'MedicalCondition', name: 'Trastorno por Déficit de Atención e Hiperactividad (TDAH)' },
@@ -134,7 +134,7 @@ export default function CuantoCuestaValoracionTDAH() {
         },
         {
           '@type': 'MedicalBusiness',
-          name: 'Psic. Karen Trujillo — Neuropsicología TDAH y Autismo',
+          name: 'Neuropsicóloga Karen Trujillo — Neuropsicología TDAH y Autismo',
           url: 'https://psicologakarentrujillo.com.mx',
           telephone: '+529983211547',
           address: {
@@ -223,7 +223,7 @@ export default function CuantoCuestaValoracionTDAH() {
               className="prose-custom"
             >
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Una de las preguntas más frecuentes que recibe la <strong>Psic. Karen Trujillo</strong> en Cancún es: <em>"¿Cuánto cuesta?"</em>.
+                Una de las preguntas más frecuentes que recibe la <strong>Neuropsicóloga Karen Trujillo</strong> en Cancún es: <em>"¿Cuánto cuesta?"</em>.
                 Es una pregunta completamente válida, y que merece una respuesta honesta y directa — no evasiva.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6 font-light">
@@ -300,7 +300,7 @@ export default function CuantoCuestaValoracionTDAH() {
               </div>
 
               <p className="text-muted-foreground text-sm font-light leading-relaxed">
-                El esquema de pago exacto se acuerda directamente con la Psic. Karen Trujillo al inicio del proceso, según
+                El esquema de pago exacto se acuerda directamente con la Neuropsicóloga Karen Trujillo al inicio del proceso, según
                 las necesidades de cada familia. Puedes consultarlo por WhatsApp antes de agendar.
               </p>
             </motion.div>
@@ -342,7 +342,7 @@ export default function CuantoCuestaValoracionTDAH() {
                   <CheckCircle2 className="w-5 h-5 text-success shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
                     <p className="font-bold text-primary text-sm mb-1">Informe con valor legal y escolar</p>
-                    <p className="text-sm text-muted-foreground font-light">El informe de la Psic. Karen Trujillo está respaldado por cédula federal 11009616 y tiene validez ante la SEP, el IMSS y las instituciones educativas de Cancún y todo México. Eso no es accesorio — es el propósito del diagnóstico.</p>
+                    <p className="text-sm text-muted-foreground font-light">El informe de la Neuropsicóloga Karen Trujillo está respaldado por cédula federal 11009616 y tiene validez ante la SEP, el IMSS y las instituciones educativas de Cancún y todo México. Eso no es accesorio — es el propósito del diagnóstico.</p>
                   </div>
                 </div>
               </div>
@@ -383,7 +383,7 @@ export default function CuantoCuestaValoracionTDAH() {
                     <tr className="bg-secondary border-b border-border">
                       <th className="text-left p-4 font-bold text-primary text-xs uppercase tracking-widest">Aspecto</th>
                       <th className="text-left p-4 font-bold text-muted-foreground text-xs uppercase tracking-widest">Opción de menor precio</th>
-                      <th className="text-left p-4 font-bold text-primary text-xs uppercase tracking-widest">Psic. Karen Trujillo</th>
+                      <th className="text-left p-4 font-bold text-primary text-xs uppercase tracking-widest">Neuropsicóloga Karen Trujillo</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -490,7 +490,7 @@ export default function CuantoCuestaValoracionTDAH() {
                     <div className="w-full h-64 md:h-full relative overflow-hidden">
                       <img
                         src="/images/psicologa-karen-trujillo.webp"
-                        alt="Psic. Karen Trujillo, neuropsicóloga especialista en TDAH y Autismo en Cancún"
+                        alt="Neuropsicóloga Karen Trujillo, neuropsicóloga especialista en TDAH y Autismo en Cancún"
                         className="w-full h-full object-cover object-top"
                         loading="lazy"
                       />
@@ -501,7 +501,7 @@ export default function CuantoCuestaValoracionTDAH() {
                   {/* Info */}
                   <div className="p-8 flex flex-col justify-center gap-5">
                     <div>
-                      <h3 className="font-serif font-bold text-2xl text-primary mb-1">Psic. Karen Trujillo</h3>
+                      <h3 className="font-serif font-bold text-2xl text-primary mb-1">Neuropsicóloga Karen Trujillo</h3>
                       <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Neuropsicóloga · Cancún, Quintana Roo</p>
                     </div>
 
@@ -518,7 +518,7 @@ export default function CuantoCuestaValoracionTDAH() {
                         { label: 'Cédula Federal', value: '11009616' },
                         { label: 'Experiencia', value: '7+ años' },
                         { label: 'Especialidad', value: 'TDAH · Autismo' },
-                        { label: 'Colegio', value: 'Psic. Q. Roo' },
+                        { label: 'Colegio', value: 'Neuropsicóloga Q. Roo' },
                         { label: 'Atención', value: 'Cancún & Online' },
                         { label: 'Reseñas', value: '18 ⭐ 5/5' },
                       ].map((c) => (

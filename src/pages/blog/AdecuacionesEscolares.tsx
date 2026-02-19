@@ -33,7 +33,7 @@ const faqItems = [
   },
   {
     q: '¿Qué documento necesito para pedir adecuaciones escolares por TDAH?',
-    a: 'El documento clave es un informe neuropsicológico emitido por un profesional con cédula federal, que incluya el diagnóstico de TDAH y las recomendaciones de adecuaciones curriculares específicas. El informe de la Psic. Karen Trujillo (cédula 11009616) cumple estos requisitos y tiene validez ante cualquier institución educativa en México.',
+    a: 'El documento clave es un informe neuropsicológico emitido por un profesional con cédula federal, que incluya el diagnóstico de TDAH y las recomendaciones de adecuaciones curriculares específicas. El informe de la Neuropsicóloga Karen Trujillo (cédula 11009616) cumple estos requisitos y tiene validez ante cualquier institución educativa en México.',
   },
   {
     q: '¿Qué pasa si la escuela se niega a dar las adecuaciones?',
@@ -44,7 +44,7 @@ const faqItems = [
 export default function AdecuacionesEscolares() {
   useEffect(() => {
     const cleanSeo = applySeo({
-      title: '¿Cómo pedir adecuaciones escolares por TDAH en México? | Guía 2025 | Psic. Karen Trujillo',
+      title: '¿Cómo pedir adecuaciones escolares por TDAH en México? | Guía 2025 | Neuropsicóloga Karen Trujillo',
       description: 'Guía paso a paso para solicitar adecuaciones escolares por TDAH en México. Qué documentos necesitas, qué adecuaciones puedes pedir y qué hacer si la escuela se niega. Informe con cédula 11009616.',
       canonical: 'https://psicologakarentrujillo.com.mx/blog/adecuaciones-escolares-tdah-mexico',
       ogTitle: '¿Cómo pedir adecuaciones escolares por TDAH en México? Guía completa 2025',
@@ -137,7 +137,7 @@ export default function AdecuacionesEscolares() {
       </motion.div>
 
       <p>
-        El informe neuropsicológico de la Psic. Karen Trujillo ya incluye las recomendaciones específicas de adecuaciones según el perfil del niño, lo que facilita enormemente la conversación con la escuela.
+        El informe neuropsicológico de la Neuropsicóloga Karen Trujillo ya incluye las recomendaciones específicas de adecuaciones según el perfil del niño, lo que facilita enormemente la conversación con la escuela.
       </p>
 
       <h2>El documento clave: el informe neuropsicológico</h2>
@@ -198,7 +198,7 @@ export default function AdecuacionesEscolares() {
       <h2>¿Cuánto tiempo tarda obtener el informe?</h2>
 
       <p>
-        La valoración completa de TDAH con la Psic. Karen Trujillo en Cancún toma entre 2 y 3 semanas. Al finalizar recibes el informe en la sesión de devolución, listo para presentar en la escuela. Si el inicio del año escolar se acerca, es conveniente iniciar el proceso con anticipación.
+        La valoración completa de TDAH con la Neuropsicóloga Karen Trujillo en Cancún toma entre 2 y 3 semanas. Al finalizar recibes el informe en la sesión de devolución, listo para presentar en la escuela. Si el inicio del año escolar se acerca, es conveniente iniciar el proceso con anticipación.
       </p>
 
       <motion.a
@@ -213,7 +213,7 @@ export default function AdecuacionesEscolares() {
       >
         <div>
           <p className="font-bold text-sm">Obtén el informe que la escuela acepta</p>
-          <p className="text-primary-foreground/70 text-xs font-light mt-1">Psic. Karen Trujillo · Cancún · Cédula Federal 11009616</p>
+          <p className="text-primary-foreground/70 text-xs font-light mt-1">Neuropsicóloga Karen Trujillo · Cancún · Cédula Federal 11009616</p>
         </div>
         <span className="shrink-0 bg-primary-foreground/20 p-3 rounded-lg group-hover:bg-primary-foreground/30 transition-colors">
           <ArrowRight className="w-5 h-5" aria-hidden="true" />
@@ -245,7 +245,7 @@ export default function AdecuacionesEscolares() {
       </div>
 
       <p className="text-xs text-muted-foreground/60 mt-8 pt-6 border-t border-border">
-        Escrito por <strong>Psic. Karen Trujillo</strong> — Neuropsicóloga en Cancún, Quintana Roo. Cédula Federal 11009616.{' '}
+        Escrito por <strong>Neuropsicóloga Karen Trujillo</strong> — Neuropsicóloga en Cancún, Quintana Roo. Cédula Federal 11009616.{' '}
         <Link to="/evaluacion-tdah-ninos" className="text-primary hover:underline">Valoración TDAH infantil</Link> ·{' '}
         <Link to="/evaluacion-tdah-adultos" className="text-primary hover:underline">Valoración TDAH adultos</Link>
       </p>

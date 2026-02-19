@@ -35,7 +35,7 @@ const Hero = () => {
 
           <p className="text-muted-foreground text-lg lg:text-xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 text-balance">
             Diagnóstico neuropsicológico con instrumentos estandarizados internacionales. Informe clínico con validez oficial ante escuelas, IMSS e instituciones.{' '}
-            <strong className="text-primary">Psic. Karen Trujillo — Cédula Federal 11009616.</strong>
+            <strong className="text-primary">Neuropsicóloga Karen Trujillo — Cédula Federal 11009616.</strong>
           </p>
 
           {/* Service pills */}
@@ -93,7 +93,7 @@ const Hero = () => {
           <div className="relative z-10 w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-[8px] border-card float-animation">
             <img
               src="/images/psicologa-karen-trujillo.webp"
-              alt="Psic. Karen Trujillo, neuropsicóloga especialista en valoración de TDAH y Autismo en Cancún, Quintana Roo"
+              alt="Neuropsicóloga Karen Trujillo, neuropsicóloga especialista en valoración de TDAH y Autismo en Cancún, Quintana Roo"
               className="w-full h-full object-cover object-top"
               loading="eager"
             />

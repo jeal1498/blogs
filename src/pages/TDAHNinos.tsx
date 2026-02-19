@@ -59,10 +59,10 @@ const symptoms = [
 export default function TDAHNinos() {
   useEffect(() => {
     const cleanSeo = applySeo({
-      title: 'Valoración TDAH Infantil en Cancún | Niños 5-17 años | Psic. Karen Trujillo',
+      title: 'Valoración TDAH Infantil en Cancún | Niños 5-17 años | Neuropsicóloga Karen Trujillo',
       description: 'Evaluación neuropsicológica de TDAH en niños y adolescentes (5-17 años) en Cancún. CONNERS-3, WISC-V, BRIEF-2. Informe con cédula 11009616 válido ante SEP e IMSS.',
       canonical: 'https://psicologakarentrujillo.com.mx/evaluacion-tdah-ninos',
-      ogTitle: 'Valoración TDAH Infantil en Cancún | Psic. Karen Trujillo',
+      ogTitle: 'Valoración TDAH Infantil en Cancún | Neuropsicóloga Karen Trujillo',
       ogDescription: 'Diagnóstico de TDAH en niños 5-17 años. CONNERS-3, WISC-V, BRIEF-2. Informe oficial cédula 11009616. Válido ante SEP e IMSS en Cancún.',
     });
 
@@ -86,7 +86,7 @@ export default function TDAHNinos() {
         {
           '@type': 'HowTo',
           name: 'Proceso de valoración neuropsicológica de TDAH infantil en Cancún',
-          description: 'Protocolo clínico de 5 fases para el diagnóstico de TDAH en niños y adolescentes realizado por la Psic. Karen Trujillo en Cancún.',
+          description: 'Protocolo clínico de 5 fases para el diagnóstico de TDAH en niños y adolescentes realizado por la Neuropsicóloga Karen Trujillo en Cancún.',
           totalTime: 'P3W',
           step: proceso.map((p) => ({
             '@type': 'HowToStep',
@@ -135,7 +135,7 @@ export default function TDAHNinos() {
                 <br /><span className="gradient-text font-normal italic text-4xl lg:text-5xl">Niños y Adolescentes 5–17 años</span>
               </h1>
               <p className="text-muted-foreground text-lg font-light leading-relaxed max-w-2xl mx-auto mb-2">
-                La <strong className="text-primary">Psic. Karen Trujillo</strong> realiza diagnóstico neuropsicológico de TDAH con CONNERS-3, WISC-V y BRIEF-2.
+                La <strong className="text-primary">Neuropsicóloga Karen Trujillo</strong> realiza diagnóstico neuropsicológico de TDAH con CONNERS-3, WISC-V y BRIEF-2.
                 Informe clínico con <strong className="text-primary">cédula federal 11009616</strong>, válido ante escuelas, SEP e IMSS.
               </p>
               <p className="text-muted-foreground text-sm font-light mb-8">Un diagnóstico correcto es el primer paso del tratamiento correcto.</p>
@@ -176,7 +176,7 @@ export default function TDAHNinos() {
               />
               <div className="mt-6 p-5 bg-accent-blue/5 border border-accent-blue/20 rounded-xl">
                 <p className="text-sm text-foreground leading-relaxed">
-                  <strong>Importante:</strong> Esta herramienta es orientativa. Solo una valoración neuropsicológica formal con instrumentos estandarizados puede establecer si se trata de TDAH u otro trastorno del neurodesarrollo. La <strong>Psic. Karen Trujillo</strong> atiende en Cancún con cédula federal 11009616.
+                  <strong>Importante:</strong> Esta herramienta es orientativa. Solo una valoración neuropsicológica formal con instrumentos estandarizados puede establecer si se trata de TDAH u otro trastorno del neurodesarrollo. La <strong>Neuropsicóloga Karen Trujillo</strong> atiende en Cancún con cédula federal 11009616.
                 </p>
               </div>
             </motion.div>
@@ -189,7 +189,7 @@ export default function TDAHNinos() {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">Pruebas estandarizadas utilizadas en la valoración</h2>
               <p className="text-muted-foreground font-light mb-10 max-w-3xl">
-                Todos los instrumentos utilizados por la Psic. Karen Trujillo están validados internacionalmente y estandarizados para población hispanohablante. Esto garantiza que los resultados sean comparables con normas clínicas actualizadas.
+                Todos los instrumentos utilizados por la Neuropsicóloga Karen Trujillo están validados internacionalmente y estandarizados para población hispanohablante. Esto garantiza que los resultados sean comparables con normas clínicas actualizadas.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {instrumentos.map((inst) => (
@@ -212,7 +212,7 @@ export default function TDAHNinos() {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">¿Cómo es el proceso de valoración TDAH en Cancún?</h2>
               <p className="text-muted-foreground font-light mb-10">
-                La valoración sigue un protocolo clínico de 5 fases. Duración total estimada: <strong className="text-primary">2 a 3 semanas</strong>, repartidas en 4-5 citas con la Psic. Karen Trujillo en Cancún.
+                La valoración sigue un protocolo clínico de 5 fases. Duración total estimada: <strong className="text-primary">2 a 3 semanas</strong>, repartidas en 4-5 citas con la Neuropsicóloga Karen Trujillo en Cancún.
               </p>
               <ol className="space-y-4">
                 {proceso.map((p) => (

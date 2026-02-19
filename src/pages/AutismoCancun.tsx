@@ -42,7 +42,7 @@ const faqItems = [
   },
   {
     q: '¿Cuánto tiempo dura el diagnóstico de Autismo en Cancún?',
-    a: 'El proceso completo de diagnóstico TEA con la Psic. Karen Trujillo en Cancún dura entre 3 y 4 semanas, repartidas en 4-5 citas. Incluye entrevista con padres (ADI-R), observación directa del niño (ADOS-2), evaluación adaptativa, análisis de resultados y sesión de devolución con informe.',
+    a: 'El proceso completo de diagnóstico TEA con la Neuropsicóloga Karen Trujillo en Cancún dura entre 3 y 4 semanas, repartidas en 4-5 citas. Incluye entrevista con padres (ADI-R), observación directa del niño (ADOS-2), evaluación adaptativa, análisis de resultados y sesión de devolución con informe.',
   },
   {
     q: '¿El diagnóstico de Autismo da acceso a apoyos institucionales?',
@@ -71,7 +71,7 @@ const teaThresholds = {
   low: {
     max: 2,
     label: 'Pocas señales identificadas',
-    description: 'Marcaste pocas señales. Algunos de estos comportamientos son parte del desarrollo típico en ciertas etapas. Si persisten o te generan dudas, una consulta con la Psic. Karen Trujillo puede darte tranquilidad.',
+    description: 'Marcaste pocas señales. Algunos de estos comportamientos son parte del desarrollo típico en ciertas etapas. Si persisten o te generan dudas, una consulta con la Neuropsicóloga Karen Trujillo puede darte tranquilidad.',
     color: 'border-success bg-success/5',
   },
   mid: {
@@ -90,10 +90,10 @@ const teaThresholds = {
 export default function AutismoCancun() {
   useEffect(() => {
     const cleanSeo = applySeo({
-      title: 'Diagnóstico Autismo (TEA) en Cancún | Niños desde 2 años | Psic. Karen Trujillo',
-      description: 'Diagnóstico de Autismo (TEA) en Cancún con ADOS-2, ADI-R y M-CHAT. Desde los 2 años. Informe con cédula 11009616 válido ante SEP, IMSS y DIF. Psic. Karen Trujillo.',
+      title: 'Diagnóstico Autismo (TEA) en Cancún | Niños desde 2 años | Neuropsicóloga Karen Trujillo',
+      description: 'Diagnóstico de Autismo (TEA) en Cancún con ADOS-2, ADI-R y M-CHAT. Desde los 2 años. Informe con cédula 11009616 válido ante SEP, IMSS y DIF. Neuropsicóloga Karen Trujillo.',
       canonical: 'https://psicologakarentrujillo.com.mx/evaluacion-autismo-cancun',
-      ogTitle: 'Diagnóstico Autismo (TEA) en Cancún | ADOS-2 | Psic. Karen Trujillo',
+      ogTitle: 'Diagnóstico Autismo (TEA) en Cancún | ADOS-2 | Neuropsicóloga Karen Trujillo',
       ogDescription: 'Evaluación TEA con ADOS-2 y ADI-R en Cancún. Desde 2 años. Informe con validez ante SEP, IMSS y DIF. Cédula federal 11009616.',
     });
 
@@ -131,7 +131,7 @@ export default function AutismoCancun() {
         {
           '@type': 'HowTo',
           name: 'Proceso de diagnóstico de Autismo (TEA) en Cancún',
-          description: 'Protocolo clínico de 5 fases para el diagnóstico de TEA en niños realizado por la Psic. Karen Trujillo en Cancún con ADOS-2 y ADI-R.',
+          description: 'Protocolo clínico de 5 fases para el diagnóstico de TEA en niños realizado por la Neuropsicóloga Karen Trujillo en Cancún con ADOS-2 y ADI-R.',
           totalTime: 'P4W',
           step: proceso.map((p) => ({
             '@type': 'HowToStep',
@@ -180,7 +180,7 @@ export default function AutismoCancun() {
                 <br /><span className="gradient-text font-normal italic text-4xl lg:text-5xl">ADOS-2 · ADI-R · Desde 2 años</span>
               </h1>
               <p className="text-muted-foreground text-lg font-light leading-relaxed max-w-2xl mx-auto mb-2">
-                La <strong className="text-primary">Psic. Karen Trujillo</strong> realiza diagnóstico de Trastorno del Espectro Autista en Cancún con los instrumentos gold standard: ADOS-2 y ADI-R. Informe clínico con <strong className="text-primary">cédula federal 11009616</strong>, válido ante SEP, IMSS y DIF.
+                La <strong className="text-primary">Neuropsicóloga Karen Trujillo</strong> realiza diagnóstico de Trastorno del Espectro Autista en Cancún con los instrumentos gold standard: ADOS-2 y ADI-R. Informe clínico con <strong className="text-primary">cédula federal 11009616</strong>, válido ante SEP, IMSS y DIF.
               </p>
               <p className="text-muted-foreground text-sm font-light mb-8">Un diagnóstico temprano maximiza el impacto de la intervención.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -239,7 +239,7 @@ export default function AutismoCancun() {
               />
               <div className="mt-6 p-5 bg-accent-pink/5 border border-accent-pink/20 rounded-xl">
                 <p className="text-sm text-foreground leading-relaxed">
-                  <strong>Importante:</strong> La presencia de estas señales no confirma el diagnóstico. El TEA tiene un espectro amplio y solo una evaluación clínica formal con ADOS-2 y ADI-R puede establecer un diagnóstico preciso. La <strong>Psic. Karen Trujillo</strong> atiende en Cancún con cédula federal 11009616.
+                  <strong>Importante:</strong> La presencia de estas señales no confirma el diagnóstico. El TEA tiene un espectro amplio y solo una evaluación clínica formal con ADOS-2 y ADI-R puede establecer un diagnóstico preciso. La <strong>Neuropsicóloga Karen Trujillo</strong> atiende en Cancún con cédula federal 11009616.
                 </p>
               </div>
             </motion.div>
@@ -256,7 +256,7 @@ export default function AutismoCancun() {
               <p className="text-muted-foreground font-light mb-4 max-w-3xl leading-relaxed">
                 No todos los diagnósticos de Autismo son equivalentes. El <strong className="text-primary">ADOS-2</strong> (Autism Diagnostic Observation Schedule, 2ª edición) es el instrumento gold standard a nivel mundial — una observación estructurada y codificada que permite cuantificar la comunicación social y los patrones conductuales con criterios clínicos estandarizados. Un diagnóstico sin ADOS-2 puede ser subjetivo e impugnable ante instituciones.
               </p>
-              <p className="text-muted-foreground font-light mb-10 max-w-3xl">La Psic. Karen Trujillo utiliza en Cancún los 4 instrumentos reconocidos internacionalmente para el diagnóstico TEA:</p>
+              <p className="text-muted-foreground font-light mb-10 max-w-3xl">La Neuropsicóloga Karen Trujillo utiliza en Cancún los 4 instrumentos reconocidos internacionalmente para el diagnóstico TEA:</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {instrumentos.map((inst) => (
                   <article key={inst.nombre} className="bg-secondary p-6 rounded-xl border border-border hover:border-accent-pink transition-colors">
@@ -279,7 +279,7 @@ export default function AutismoCancun() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
                 ¿Cómo es el proceso de diagnóstico de Autismo en Cancún?
               </h2>
-              <p className="text-muted-foreground font-light mb-10">Duración total: <strong className="text-primary">3 a 4 semanas</strong> con la Psic. Karen Trujillo en Cancún.</p>
+              <p className="text-muted-foreground font-light mb-10">Duración total: <strong className="text-primary">3 a 4 semanas</strong> con la Neuropsicóloga Karen Trujillo en Cancún.</p>
               <ol className="space-y-4">
                 {proceso.map((p) => (
                   <li key={p.n} className="flex gap-6 p-6 bg-card rounded-xl border border-border">

@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     q: '¿Cuánto dura la valoración de TDAH adulto en Cancún?',
-    a: 'La valoración de TDAH adulto en Cancún toma entre 2 y 3 semanas, repartidas en 3-4 citas con la Psic. Karen Trujillo. Incluye entrevista inicial, aplicación de pruebas estandarizadas (CAARS, DIVA 2.0, CPT-3), análisis y sesión de devolución con informe clínico.',
+    a: 'La valoración de TDAH adulto en Cancún toma entre 2 y 3 semanas, repartidas en 3-4 citas con la Neuropsicóloga Karen Trujillo. Incluye entrevista inicial, aplicación de pruebas estandarizadas (CAARS, DIVA 2.0, CPT-3), análisis y sesión de devolución con informe clínico.',
   },
   {
     q: '¿Para qué sirve el diagnóstico de TDAH en adultos?',
@@ -44,7 +44,7 @@ const faqItems = [
   },
   {
     q: '¿El diagnóstico de TDAH adulto tiene validez oficial?',
-    a: 'Sí. El informe emitido por la Psic. Karen Trujillo está respaldado por cédula profesional federal 11009616 y tiene validez ante empleadores, instituciones de salud, IMSS y organismos gubernamentales.',
+    a: 'Sí. El informe emitido por la Neuropsicóloga Karen Trujillo está respaldado por cédula profesional federal 11009616 y tiene validez ante empleadores, instituciones de salud, IMSS y organismos gubernamentales.',
   },
 ];
 
@@ -65,7 +65,7 @@ const adultThresholds = {
   low: {
     max: 2,
     label: 'Pocas señales por ahora',
-    description: 'Marcaste pocas señales. Puede ser estrés situacional o algo puntual. Si persisten o aumentan, considera consultar con la Psic. Karen Trujillo en Cancún.',
+    description: 'Marcaste pocas señales. Puede ser estrés situacional o algo puntual. Si persisten o aumentan, considera consultar con la Neuropsicóloga Karen Trujillo en Cancún.',
     color: 'border-success bg-success/5',
   },
   mid: {
@@ -84,10 +84,10 @@ const adultThresholds = {
 export default function TDAHAdultos() {
   useEffect(() => {
     const cleanSeo = applySeo({
-      title: 'Valoración TDAH en Adultos en Cancún | Diagnóstico Neuropsicológico | Psic. Karen Trujillo',
+      title: 'Valoración TDAH en Adultos en Cancún | Diagnóstico Neuropsicológico | Neuropsicóloga Karen Trujillo',
       description: 'Diagnóstico neuropsicológico de TDAH en adultos en Cancún. CAARS, DIVA 2.0, CPT-3. Muchos adultos llevan años sin diagnóstico. Informe con cédula 11009616.',
       canonical: 'https://psicologakarentrujillo.com.mx/evaluacion-tdah-adultos',
-      ogTitle: '¿Tienes TDAH sin diagnosticar? Valoración en Cancún | Psic. Karen Trujillo',
+      ogTitle: '¿Tienes TDAH sin diagnosticar? Valoración en Cancún | Neuropsicóloga Karen Trujillo',
       ogDescription: 'Diagnóstico de TDAH adulto en Cancún. El TDAH adulto está subdiagnosticado. Instrumentos: CAARS, DIVA 2.0, CPT-3. Cédula 11009616.',
     });
 
@@ -111,7 +111,7 @@ export default function TDAHAdultos() {
         {
           '@type': 'HowTo',
           name: 'Proceso de valoración de TDAH en adultos en Cancún',
-          description: 'Protocolo clínico de 4 fases para el diagnóstico de TDAH en adultos realizado por la Psic. Karen Trujillo en Cancún.',
+          description: 'Protocolo clínico de 4 fases para el diagnóstico de TDAH en adultos realizado por la Neuropsicóloga Karen Trujillo en Cancún.',
           totalTime: 'P3W',
           step: proceso.map((p) => ({
             '@type': 'HowToStep',
@@ -167,7 +167,7 @@ export default function TDAHAdultos() {
                 <br /><span className="gradient-text font-normal italic text-4xl lg:text-5xl">¿Llevas años sin diagnóstico?</span>
               </h1>
               <p className="text-muted-foreground text-lg font-light leading-relaxed max-w-2xl mx-auto mb-2">
-                La <strong className="text-primary">Psic. Karen Trujillo</strong> realiza diagnóstico neuropsicológico de TDAH en adultos en Cancún. El TDAH adulto está subdiagnosticado — muchas personas llevan décadas creyendo que el problema es su carácter o fuerza de voluntad.
+                La <strong className="text-primary">Neuropsicóloga Karen Trujillo</strong> realiza diagnóstico neuropsicológico de TDAH en adultos en Cancún. El TDAH adulto está subdiagnosticado — muchas personas llevan décadas creyendo que el problema es su carácter o fuerza de voluntad.
               </p>
               <p className="text-muted-foreground text-sm font-light mb-8">Instrumentos: CAARS · DIVA 2.0 · CPT-3 · Cédula federal 11009616.</p>
               <a
@@ -210,7 +210,7 @@ export default function TDAHAdultos() {
           <div className="max-w-5xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">Mitos sobre el TDAH en adultos</h2>
-              <p className="text-muted-foreground font-light mb-10 max-w-3xl">Estos mitos retrasan diagnósticos durante décadas. La Psic. Karen Trujillo los clarifica desde la evidencia clínica:</p>
+              <p className="text-muted-foreground font-light mb-10 max-w-3xl">Estos mitos retrasan diagnósticos durante décadas. La Neuropsicóloga Karen Trujillo los clarifica desde la evidencia clínica:</p>
               <div className="space-y-4">
                 {mitos.map((m) => (
                   <article key={m.mito} className="bg-card p-6 rounded-xl border border-border grid md:grid-cols-2 gap-6">
@@ -257,7 +257,7 @@ export default function TDAHAdultos() {
           <div className="max-w-5xl mx-auto">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">¿Cómo es el proceso de valoración TDAH adulto?</h2>
-              <p className="text-muted-foreground font-light mb-10">Duración total: <strong className="text-primary">2 a 3 semanas</strong> en Cancún con la Psic. Karen Trujillo.</p>
+              <p className="text-muted-foreground font-light mb-10">Duración total: <strong className="text-primary">2 a 3 semanas</strong> en Cancún con la Neuropsicóloga Karen Trujillo.</p>
               <ol className="space-y-4">
                 {proceso.map((p) => (
                   <li key={p.n} className="flex gap-6 p-6 bg-card rounded-xl border border-border">
@@ -279,7 +279,7 @@ export default function TDAHAdultos() {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl font-serif font-bold italic mb-6">Un diagnóstico correcto cambia la narrativa</h2>
               <p className="text-primary-foreground/80 font-light mb-8 text-lg">
-                Saber que tienes TDAH no es una excusa. Es entender cómo funciona tu cerebro y acceder a las herramientas correctas para que funcione a tu favor. La Psic. Karen Trujillo te acompaña en ese proceso en Cancún.
+                Saber que tienes TDAH no es una excusa. Es entender cómo funciona tu cerebro y acceder a las herramientas correctas para que funcione a tu favor. La Neuropsicóloga Karen Trujillo te acompaña en ese proceso en Cancún.
               </p>
               <a
                 href="https://wa.me/529983211547?text=Hola%20Karen,%20me%20interesa%20la%20valoración%20de%20TDAH%20adultos"

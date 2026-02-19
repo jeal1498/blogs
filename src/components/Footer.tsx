@@ -77,6 +77,11 @@ const Footer = () => {
                 ¿Cuánto cuesta una valoración de TDAH en Cancún?
               </Link>
             </li>
+            <li>
+              <Link to="/blog/tdah-en-ninas-sintomas" className="hover:text-primary-foreground hover:translate-x-1 transition-all inline-block leading-relaxed">
+                TDAH en niñas: síntomas que casi nadie detecta
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -101,7 +106,7 @@ const Footer = () => {
               </div>
               <div>
                 <span className="block text-[10px] uppercase tracking-widest opacity-50">Email</span>
-                <span className="text-sm font-bold truncate">karentrujillopsic@gmail.com</span>
+                <span className="text-sm font-bold break-all leading-snug">karentrujillopsic@gmail.com</span>
               </div>
             </a>
           </div>

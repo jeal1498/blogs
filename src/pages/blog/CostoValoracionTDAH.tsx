@@ -8,7 +8,7 @@ import { applySeo, injectSchema } from '@/lib/seo';
 const faqItems = [
   {
     q: '¿Cuánto cuesta una valoración de TDAH en Cancún?',
-    a: 'La valoración neuropsicológica de TDAH con la Psic. Karen Trujillo en Cancún tiene un costo de $7,000 pesos MXN. Este monto cubre el proceso completo: entrevista inicial, aplicación de pruebas estandarizadas (CONNERS-3, WISC-V o CAARS según el caso), análisis clínico, elaboración del informe y sesión de devolución.',
+    a: 'La valoración neuropsicológica de TDAH con la Neuropsicóloga Karen Trujillo en Cancún tiene un costo de $7,000 pesos MXN. Este monto cubre el proceso completo: entrevista inicial, aplicación de pruebas estandarizadas (CONNERS-3, WISC-V o CAARS según el caso), análisis clínico, elaboración del informe y sesión de devolución.',
   },
   {
     q: '¿Se puede pagar en parcialidades?',
@@ -31,11 +31,11 @@ const faqItems = [
 export default function CostoValoracionTDAH() {
   useEffect(() => {
     const cleanSeo = applySeo({
-      title: '¿Cuánto cuesta una valoración de TDAH en Cancún? | Precios 2025 | Psic. Karen Trujillo',
-      description: 'La valoración de TDAH en Cancún con la Psic. Karen Trujillo cuesta $7,000 MXN. Incluye pruebas estandarizadas, informe con cédula 11009616 y sesión de devolución. Pago en parcialidades disponible.',
+      title: '¿Cuánto cuesta una valoración de TDAH en Cancún? | Precios 2025 | Neuropsicóloga Karen Trujillo',
+      description: 'La valoración de TDAH en Cancún con la Neuropsicóloga Karen Trujillo cuesta $7,000 MXN. Incluye pruebas estandarizadas, informe con cédula 11009616 y sesión de devolución. Pago en parcialidades disponible.',
       canonical: 'https://psicologakarentrujillo.com.mx/blog/costo-valoracion-tdah-cancun',
       ogTitle: '¿Cuánto cuesta una valoración de TDAH en Cancún? Precio real 2025',
-      ogDescription: '$7,000 MXN por valoración completa de TDAH en Cancún. Informe oficial con cédula 11009616. Pago en parcialidades. Psic. Karen Trujillo.',
+      ogDescription: '$7,000 MXN por valoración completa de TDAH en Cancún. Informe oficial con cédula 11009616. Pago en parcialidades. Neuropsicóloga Karen Trujillo.',
     });
     const cleanSchema = injectSchema('schema-costo-tdah', {
       '@context': 'https://schema.org',
@@ -82,7 +82,7 @@ export default function CostoValoracionTDAH() {
       <div className="answer-box">
         <p className="text-primary-foreground font-bold text-sm uppercase tracking-widest mb-2">Respuesta directa</p>
         <p className="text-primary-foreground text-base leading-relaxed mb-0">
-          La valoración neuropsicológica de TDAH con la <strong>Psic. Karen Trujillo en Cancún</strong> tiene un costo de <strong>$7,000 pesos MXN</strong>. Incluye el proceso completo: entrevista, pruebas estandarizadas, informe clínico con cédula federal 11009616 y sesión de devolución. El pago puede distribuirse en las 4 sesiones del proceso.
+          La valoración neuropsicológica de TDAH con la <strong>Neuropsicóloga Karen Trujillo en Cancún</strong> tiene un costo de <strong>$7,000 pesos MXN</strong>. Incluye el proceso completo: entrevista, pruebas estandarizadas, informe clínico con cédula federal 11009616 y sesión de devolución. El pago puede distribuirse en las 4 sesiones del proceso.
         </p>
       </div>
 
@@ -150,10 +150,10 @@ export default function CostoValoracionTDAH() {
         El costo real no es la valoración — es el tiempo perdido sin el diagnóstico correcto.
       </p>
 
-      <h2>¿Cómo agendar con la Psic. Karen Trujillo en Cancún?</h2>
+      <h2>¿Cómo agendar con la Neuropsicóloga Karen Trujillo en Cancún?</h2>
 
       <p>
-        El primer paso es contactar directamente por WhatsApp. La Psic. Karen Trujillo evalúa el caso, confirma si la valoración es el siguiente paso adecuado y resuelve cualquier duda sobre el proceso antes de comenzar.
+        El primer paso es contactar directamente por WhatsApp. La Neuropsicóloga Karen Trujillo evalúa el caso, confirma si la valoración es el siguiente paso adecuado y resuelve cualquier duda sobre el proceso antes de comenzar.
       </p>
 
       <motion.a
@@ -167,7 +167,7 @@ export default function CostoValoracionTDAH() {
         viewport={{ once: true }}
       >
         <div>
-          <p className="font-bold text-sm">Psic. Karen Trujillo · Cancún, Quintana Roo</p>
+          <p className="font-bold text-sm">Neuropsicóloga Karen Trujillo · Cancún, Quintana Roo</p>
           <p className="text-primary-foreground/70 text-xs font-light mt-1">Cédula Federal: 11009616 · Lun-Vie 9-8 PM · Sáb 9-2 PM</p>
         </div>
         <span className="shrink-0 bg-primary-foreground/20 p-3 rounded-lg group-hover:bg-primary-foreground/30 transition-colors">
@@ -194,13 +194,13 @@ export default function CostoValoracionTDAH() {
         <div className="flex items-start gap-2">
           <AlertCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
           <p className="mb-0">
-            <strong>Nota:</strong> Los precios pueden variar. Este artículo refleja las tarifas vigentes de la Psic. Karen Trujillo al momento de su publicación. Confirma el costo actual directamente antes de iniciar el proceso.
+            <strong>Nota:</strong> Los precios pueden variar. Este artículo refleja las tarifas vigentes de la Neuropsicóloga Karen Trujillo al momento de su publicación. Confirma el costo actual directamente antes de iniciar el proceso.
           </p>
         </div>
       </div>
 
       <p className="text-xs text-muted-foreground/60 mt-8 pt-6 border-t border-border">
-        Escrito por <strong>Psic. Karen Trujillo</strong> — Neuropsicóloga en Cancún, Quintana Roo. Cédula Federal 11009616. Especialista en valoración de TDAH y Autismo.{' '}
+        Escrito por <strong>Neuropsicóloga Karen Trujillo</strong> — Neuropsicóloga en Cancún, Quintana Roo. Cédula Federal 11009616. Especialista en valoración de TDAH y Autismo.{' '}
         <Link to="/evaluacion-tdah-ninos" className="text-primary hover:underline">TDAH infantil</Link> ·{' '}
         <Link to="/evaluacion-tdah-adultos" className="text-primary hover:underline">TDAH adultos</Link> ·{' '}
         <Link to="/evaluacion-autismo-cancun" className="text-primary hover:underline">Autismo TEA</Link>

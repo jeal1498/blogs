@@ -30,7 +30,7 @@ const AboutSection = () => {
 
             <div className="p-6 bg-accent-blue/10 border-l-4 border-accent-blue rounded-lg text-base leading-relaxed text-foreground font-medium mb-6">
               <p>
-                Soy <strong>Psic. Karen Trujillo</strong> (Cédula Federal: 11009616), neuropsicóloga especializada
+                Soy <strong>Neuropsicóloga Karen Trujillo</strong> (Cédula Federal: 11009616), neuropsicóloga especializada
                 en valoración de TDAH y Autismo, egresada de la Universidad Modelo de Quintana Roo. Con más de 7 años
                 de experiencia en Cancún, mis diagnósticos combinan rigor científico con instrumentos estandarizados internacionales.
               </p>

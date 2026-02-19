@@ -93,7 +93,7 @@ const BlogLayout = ({
               <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground border-t border-border pt-4 mt-4">
                 <span className="flex items-center gap-1.5">
                   <User className="w-3.5 h-3.5" aria-hidden="true" />
-                  Psic. Karen Trujillo — Cédula 11009616
+                  Neuropsicóloga Karen Trujillo — Cédula 11009616
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Calendar className="w-3.5 h-3.5" aria-hidden="true" />
@@ -126,12 +126,12 @@ const BlogLayout = ({
         {/* ── CTA banner ── */}
         <section className="py-16 px-6 bg-gradient-primary text-primary-foreground">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-primary-foreground/60 mb-3">Psic. Karen Trujillo · Cancún</p>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-primary-foreground/60 mb-3">Neuropsicóloga Karen Trujillo · Cancún</p>
             <h2 className="text-2xl md:text-3xl font-serif font-bold italic mb-4">
               ¿Quieres dar el primer paso?
             </h2>
             <p className="text-primary-foreground/80 font-light mb-8 max-w-xl mx-auto">
-              La Psic. Karen Trujillo atiende en Cancún con cédula federal 11009616. Agenda una consulta inicial por WhatsApp sin compromiso.
+              La Neuropsicóloga Karen Trujillo atiende en Cancún con cédula federal 11009616. Agenda una consulta inicial por WhatsApp sin compromiso.
             </p>
             <a
               href={`https://wa.me/529983211547?text=${ctaMessage}`}
