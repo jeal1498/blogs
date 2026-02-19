@@ -4,7 +4,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 
 // Pages that contain each anchored section
-const PATHS_WITH_SOBRE_MI = ['/', '/evaluacion-tdah-ninos', '/evaluacion-tdah-adultos', '/evaluacion-autismo-cancun', '/blog'];
+const PATHS_WITH_SOBRE_MI = [
+  '/',
+  '/evaluacion-tdah-ninos',
+  '/evaluacion-tdah-adultos',
+  '/evaluacion-autismo-cancun',
+  '/blog',
+  '/blog/cuanto-cuesta-valoracion-tdah-cancun',
+  '/blog/tdah-en-ninas-sintomas',
+];
 const PATHS_WITH_TESTIMONIOS = ['/'];
 const PATHS_WITH_FAQ = [
   '/',

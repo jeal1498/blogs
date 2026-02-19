@@ -262,6 +262,8 @@ export default function TDAHNinos() {
           </div>
         </section>
 
+        <AboutMini />
+
         {/* ── FAQ ── */}
         <section id="faq" className="py-24 px-6 bg-secondary">
           <div className="max-w-4xl mx-auto">
@@ -283,8 +285,6 @@ export default function TDAHNinos() {
             </motion.div>
           </div>
         </section>
-
-        <AboutMini />
 
         <LocationSection />
 

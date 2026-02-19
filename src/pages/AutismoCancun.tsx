@@ -328,6 +328,8 @@ export default function AutismoCancun() {
           </div>
         </section>
 
+        <AboutMini />
+
         {/* ── FAQ ── */}
         <section id="faq" className="py-24 px-6 bg-card">
           <div className="max-w-4xl mx-auto">
@@ -349,8 +351,6 @@ export default function AutismoCancun() {
             </motion.div>
           </div>
         </section>
-
-        <AboutMini />
 
         <LocationSection />
 

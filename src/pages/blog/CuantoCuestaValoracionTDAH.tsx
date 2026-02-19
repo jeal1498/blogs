@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
+import AboutMini from '@/components/AboutMini';
 import { applySeo, injectSchema } from '@/lib/seo';
 
 const faqItems = [
@@ -438,6 +439,8 @@ export default function CuantoCuestaValoracionTDAH() {
           </div>
         </section>
 
+        <AboutMini />
+
         {/* ── FAQ ── */}
         <section id="faq" className="py-24 px-6 bg-secondary">
           <div className="max-w-4xl mx-auto">
@@ -467,87 +470,6 @@ export default function CuantoCuestaValoracionTDAH() {
                     <p className="px-6 pb-6 text-muted-foreground text-sm font-light leading-relaxed">{faq.a}</p>
                   </details>
                 ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* ── Sobre Karen (E-E-A-T signal) ── */}
-        <section className="py-24 px-6 bg-card border-t border-border">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <p className="text-[10px] uppercase tracking-widest font-bold text-muted-foreground mb-8 text-center">Sobre la autora</p>
-
-              <div className="bg-secondary rounded-2xl border border-border overflow-hidden">
-                <div className="flex flex-col md:flex-row">
-
-                  {/* Foto */}
-                  <div className="md:w-56 shrink-0">
-                    <div className="w-full h-64 md:h-full relative overflow-hidden">
-                      <img
-                        src="/images/psicologa-karen-trujillo.webp"
-                        alt="Neuropsicóloga Karen Trujillo, neuropsicóloga especialista en TDAH y Autismo en Cancún"
-                        className="w-full h-full object-cover object-top"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent md:bg-gradient-to-r" />
-                    </div>
-                  </div>
-
-                  {/* Info */}
-                  <div className="p-8 flex flex-col justify-center gap-5">
-                    <div>
-                      <h3 className="font-serif font-bold text-2xl text-primary mb-1">Neuropsicóloga Karen Trujillo</h3>
-                      <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Neuropsicóloga · Cancún, Quintana Roo</p>
-                    </div>
-
-                    <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                      Especialista en evaluación neuropsicológica de TDAH y Autismo, egresada de la
-                      <strong className="text-primary"> Universidad Modelo de Quintana Roo</strong>. Con más de
-                      <strong className="text-primary"> 7 años de experiencia clínica</strong> en Cancún, sus diagnósticos
-                      combinan rigor científico con instrumentos estandarizados internacionales como CONNERS-3, WISC-V, ADOS-2 y BRIEF-2.
-                    </p>
-
-                    {/* Credenciales */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                      {[
-                        { label: 'Cédula Federal', value: '11009616' },
-                        { label: 'Experiencia', value: '7+ años' },
-                        { label: 'Especialidad', value: 'TDAH · Autismo' },
-                        { label: 'Colegio', value: 'Neuropsicóloga Q. Roo' },
-                        { label: 'Atención', value: 'Cancún & Online' },
-                        { label: 'Reseñas', value: '18 ⭐ 5/5' },
-                      ].map((c) => (
-                        <div key={c.label} className="bg-card rounded-lg p-3 border border-border">
-                          <p className="text-[9px] uppercase tracking-widest text-muted-foreground font-bold mb-0.5">{c.label}</p>
-                          <p className="text-xs font-bold text-primary">{c.value}</p>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* CTA autor */}
-                    <div className="flex flex-col sm:flex-row gap-3 pt-1">
-                      <a
-                        href="https://wa.me/529983211547?text=Hola%20Karen,%20leí%20tu%20artículo%20y%20quiero%20información%20sobre%20la%20valoración"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-lg hover:opacity-90 transition-all shadow-md"
-                      >
-                        Agendar con Karen <ArrowRight className="w-3 h-3" />
-                      </a>
-                      <Link
-                        to="/#sobre-mi"
-                        className="inline-flex items-center gap-2 text-xs font-bold text-primary hover:underline px-2 py-3"
-                      >
-                        Ver perfil completo
-                      </Link>
-                    </div>
-                  </div>
-                </div>
               </div>
             </motion.div>
           </div>
