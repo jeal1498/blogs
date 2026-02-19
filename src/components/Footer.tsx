@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary-foreground/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
       <motion.div
-        className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 relative z-10 border-b border-primary-foreground/10 pb-16"
+        className="max-w-6xl mx-auto grid md:grid-cols-5 gap-12 relative z-10 border-b border-primary-foreground/10 pb-16"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -64,6 +64,18 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/#faq" className="hover:text-primary-foreground hover:translate-x-1 transition-all inline-block">Preguntas Frecuentes</Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Blog links */}
+        <div className="md:col-span-1">
+          <h4 className="font-bold uppercase tracking-widest text-xs mb-6 text-accent-pink">Blog</h4>
+          <ul className="space-y-3 text-xs font-medium text-primary-foreground/70">
+            <li>
+              <Link to="/blog/cuanto-cuesta-valoracion-tdah-cancun" className="hover:text-primary-foreground hover:translate-x-1 transition-all inline-block leading-relaxed">
+                ¿Cuánto cuesta una valoración de TDAH en Cancún?
+              </Link>
             </li>
           </ul>
         </div>
