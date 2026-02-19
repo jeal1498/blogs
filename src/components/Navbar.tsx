@@ -3,12 +3,28 @@ import { Menu, Phone, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 
+// Pages that contain each anchored section
+const PATHS_WITH_SOBRE_MI = ['/', '/evaluacion-tdah-ninos', '/evaluacion-tdah-adultos', '/evaluacion-autismo-cancun', '/blog'];
+const PATHS_WITH_TESTIMONIOS = ['/'];
+const PATHS_WITH_FAQ = [
+  '/',
+  '/evaluacion-tdah-ninos',
+  '/evaluacion-tdah-adultos',
+  '/evaluacion-autismo-cancun',
+  '/blog/cuanto-cuesta-valoracion-tdah-cancun',
+  '/blog/tdah-en-ninas-sintomas',
+];
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showValoraciones, setShowValoraciones] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === '/';
+  const path = location.pathname;
+
+  const showSobreMi    = PATHS_WITH_SOBRE_MI.includes(path);
+  const showTestimonios = PATHS_WITH_TESTIMONIOS.includes(path);
+  const showFaq        = PATHS_WITH_FAQ.includes(path);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -17,13 +33,7 @@ const Navbar = () => {
   }, []);
 
   // Close mobile menu on route change
-  useEffect(() => { setIsMenuOpen(false); }, [location.pathname]);
-
-  const sectionLinks = [
-    { href: '#sobre-mi', label: 'Sobre mí', homeOnly: false },
-    { href: '#testimonios', label: 'Testimonios', homeOnly: true },
-    { href: '#faq', label: 'FAQ', homeOnly: true },
-  ];
+  useEffect(() => { setIsMenuOpen(false); }, [path]);
 
   const valoraciones = [
     { to: '/evaluacion-tdah-ninos', label: 'TDAH Infantil', sub: 'Niños 5-17 años' },
@@ -31,17 +41,15 @@ const Navbar = () => {
     { to: '/evaluacion-autismo-cancun', label: 'Autismo (TEA)', sub: 'Desde 2 años' },
   ];
 
-  const handleSectionClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
     e.preventDefault();
-    const el = document.querySelector(href);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    const el = document.querySelector(hash);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
   };
 
-  const sectionHref = (hash: string, homeOnly: boolean) =>
-    homeOnly && !isHome ? `/${hash}` : hash;
+  const linkClass = "px-5 py-2 text-xs font-bold uppercase tracking-widest text-primary/70 hover:text-primary hover:bg-secondary rounded-lg transition-all";
+  const mobileLinkClass = "text-center p-3 rounded-lg hover:bg-secondary text-sm font-bold uppercase tracking-widest text-primary transition-colors";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 p-4 transition-all duration-300">
@@ -99,22 +107,23 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
 
-          {sectionLinks.map((link) => (
-            <a
-              key={link.href}
-              href={sectionHref(link.href, link.homeOnly)}
-              onClick={(e) => handleSectionClick(e, link.href)}
-              className="px-5 py-2 text-xs font-bold uppercase tracking-widest text-primary/70 hover:text-primary hover:bg-secondary rounded-lg transition-all"
-            >
-              {link.label}
+          {showSobreMi && (
+            <a href="#sobre-mi" onClick={(e) => scrollTo(e, '#sobre-mi')} className={linkClass}>
+              Sobre mí
             </a>
-          ))}
-          <Link
-            to="/blog"
-            className="px-5 py-2 text-xs font-bold uppercase tracking-widest text-primary/70 hover:text-primary hover:bg-secondary rounded-lg transition-all"
-          >
-            Blog
-          </Link>
+          )}
+          {showTestimonios && (
+            <a href="#testimonios" onClick={(e) => scrollTo(e, '#testimonios')} className={linkClass}>
+              Testimonios
+            </a>
+          )}
+          {showFaq && (
+            <a href="#faq" onClick={(e) => scrollTo(e, '#faq')} className={linkClass}>
+              FAQ
+            </a>
+          )}
+
+          <Link to="/blog" className={linkClass}>Blog</Link>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
@@ -165,22 +174,22 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="h-px bg-border my-2" />
-            {sectionLinks.map((link) => (
-              <a
-                key={link.href}
-                href={sectionHref(link.href, link.homeOnly)}
-                onClick={(e) => handleSectionClick(e, link.href)}
-                className="text-center p-3 rounded-lg hover:bg-secondary text-sm font-bold uppercase tracking-widest text-primary transition-colors"
-              >
-                {link.label}
+            {showSobreMi && (
+              <a href="#sobre-mi" onClick={(e) => scrollTo(e, '#sobre-mi')} className={mobileLinkClass}>
+                Sobre mí
               </a>
-            ))}
-            <Link
-              to="/blog"
-              className="text-center p-3 rounded-lg hover:bg-secondary text-sm font-bold uppercase tracking-widest text-primary transition-colors"
-            >
-              Blog
-            </Link>
+            )}
+            {showTestimonios && (
+              <a href="#testimonios" onClick={(e) => scrollTo(e, '#testimonios')} className={mobileLinkClass}>
+                Testimonios
+              </a>
+            )}
+            {showFaq && (
+              <a href="#faq" onClick={(e) => scrollTo(e, '#faq')} className={mobileLinkClass}>
+                FAQ
+              </a>
+            )}
+            <Link to="/blog" className={mobileLinkClass}>Blog</Link>
             <div className="h-px bg-border my-2" />
             <a
               href="tel:529983211547"

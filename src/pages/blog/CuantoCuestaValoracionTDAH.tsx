@@ -439,7 +439,7 @@ export default function CuantoCuestaValoracionTDAH() {
         </section>
 
         {/* ── FAQ ── */}
-        <section className="py-24 px-6 bg-secondary">
+        <section id="faq" className="py-24 px-6 bg-secondary">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

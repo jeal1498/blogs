@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
+import AboutMini from '@/components/AboutMini';
 import { applySeo } from '@/lib/seo';
 
 const articles = [
@@ -161,6 +162,7 @@ export default function Blog() {
         </section>
 
       </main>
+      <AboutMini />
       <Footer />
       <FloatingButtons waMessage="Hola%20Karen,%20vi%20tu%20blog%20y%20me%20gustaría%20recibir%20más%20información%20sobre%20las%20valoraciones" />
     </div>
