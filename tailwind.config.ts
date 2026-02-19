@@ -17,6 +17,27 @@ export default {
         sans: ['Montserrat', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
       },
+      fontWeight: {
+        light: '400',    // Montserrat 300 es demasiado delgada en pantalla
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+      },
+      fontSize: {
+        // Escala ligeramente aumentada para legibilidad
+        'xs':   ['0.75rem',  { lineHeight: '1.5' }],   // 12.75px — solo etiquetas/metadatos
+        'sm':   ['0.9rem',   { lineHeight: '1.65' }],   // 15.3px — texto secundario
+        'base': ['1rem',     { lineHeight: '1.7' }],    // 17px — cuerpo principal
+        'lg':   ['1.125rem', { lineHeight: '1.65' }],   // 19px
+        'xl':   ['1.25rem',  { lineHeight: '1.5' }],    // 21px
+        '2xl':  ['1.5rem',   { lineHeight: '1.4' }],    // 25.5px
+        '3xl':  ['1.875rem', { lineHeight: '1.3' }],    // 32px
+        '4xl':  ['2.25rem',  { lineHeight: '1.2' }],    // 38px
+        '5xl':  ['3rem',     { lineHeight: '1.1' }],    // 51px
+        '6xl':  ['3.75rem',  { lineHeight: '1.05' }],   // 64px
+        '7xl':  ['4.5rem',   { lineHeight: '1' }],      // 76px
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

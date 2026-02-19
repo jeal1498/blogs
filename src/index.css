@@ -24,7 +24,7 @@
     --secondary-foreground: 256 27% 25%;
 
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215 16.3% 46.9%;
+    --muted-foreground: 215 16.3% 38%;
 
     --accent: 240 33% 86%;
     --accent-foreground: 256 27% 25%;
@@ -96,10 +96,17 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 17px;
   }
 
   body {
     @apply bg-background text-foreground font-sans;
+    font-weight: 400;
+  }
+
+  /* Párrafos y texto de cuerpo: nunca menos de peso 400 */
+  p, li, td, dd, blockquote {
+    font-weight: 400;
   }
 }
 
