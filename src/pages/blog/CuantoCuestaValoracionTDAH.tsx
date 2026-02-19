@@ -588,7 +588,7 @@ export default function CuantoCuestaValoracionTDAH() {
 
       </main>
       <Footer />
-      <FloatingButtons />
+      <FloatingButtons waMessage="Hola%20Karen,%20leí%20tu%20artículo%20sobre%20el%20costo%20de%20la%20valoración%20TDAH%20y%20me%20gustaría%20recibir%20más%20información" />
     </div>
   );
 }

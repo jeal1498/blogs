@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
+Allow: /evaluacion-tdah-ninos
+Allow: /evaluacion-tdah-adultos
+Allow: /evaluacion-autismo-cancun
+Allow: /blog
+Allow: /blog/
+Allow: /aviso-de-privacidad
+
+Disallow: /404
 
 Sitemap: https://psicologakarentrujillo.com.mx/sitemap.xml

@@ -1,7 +1,16 @@
 import { Phone, MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const FloatingButtons = () => {
+interface FloatingButtonsProps {
+  waMessage?: string;
+}
+
+const FloatingButtons = ({ waMessage }: FloatingButtonsProps) => {
+  const defaultMsg = 'Hola%20Psicóloga%20Karen,%20vengo%20de%20tu%20web%20y%20me%20gustaría%20agendar%20una%20valoración';
+  const encoded = waMessage
+    ? (waMessage.includes('%') ? waMessage : encodeURIComponent(waMessage))
+    : defaultMsg;
+
   return (
     <motion.div 
       className="fixed bottom-6 left-4 right-4 z-[100] flex gap-3 lg:hidden"
@@ -16,7 +25,7 @@ const FloatingButtons = () => {
         <Phone className="w-4 h-4" /> Llamar
       </a>
       <a 
-        href="https://wa.me/529983211547?text=Hola%20Psicóloga%20Karen,%20vengo%20de%20tu%20web%20y%20me%20gustaría%20agendar%20una%20sesión" 
+        href={`https://wa.me/529983211547?text=${encoded}`}
         target="_blank"
         rel="noopener noreferrer"
         className="flex-[1.5] bg-whatsapp hover:opacity-90 text-primary-foreground py-4 rounded-lg font-bold text-[10px] uppercase tracking-widest shadow-xl flex items-center justify-center gap-2 whatsapp-pulse active:scale-95"

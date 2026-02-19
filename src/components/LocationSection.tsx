@@ -22,17 +22,25 @@ const LocationSection = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-start gap-4 p-5 bg-card rounded-lg border border-border">
-                <div className="bg-primary p-3 rounded-lg text-primary-foreground shrink-0">
+              <div className="flex items-start gap-4 p-5 bg-card rounded-lg border border-border hover:border-primary/40 hover:shadow-md transition-all group cursor-pointer">
+                <div className="bg-primary p-3 rounded-lg text-primary-foreground shrink-0 group-hover:scale-110 transition-transform">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-sm font-bold text-primary mb-1">Dirección</p>
-                  <address className="text-xs text-muted-foreground leading-relaxed not-italic">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Psicóloga+Karen+Trujillo+Neuropsicología+TDAH+Autismo+Cancún+SM200+M49+L2+Hacienda+de+Chinconcuac"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-muted-foreground leading-relaxed hover:text-primary transition-colors"
+                  >
                     SM200 M49 L2, Hacienda de Chinconcuac,<br />
                     Circuito casa 1587B, C.P. 77539<br />
                     Cancún, Quintana Roo, México.
-                  </address>
+                    <span className="block mt-2 text-[10px] font-bold uppercase tracking-widest text-primary/60 group-hover:text-primary transition-colors">
+                      📍 Abrir en Google Maps →
+                    </span>
+                  </a>
                 </div>
               </div>
 

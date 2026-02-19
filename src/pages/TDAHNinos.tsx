@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import LocationSection from '@/components/LocationSection';
 import SymptomChecker from '@/components/SymptomChecker';
+import AboutMini from '@/components/AboutMini';
 import { applySeo, injectSchema } from '@/lib/seo';
 
 const instrumentos = [
@@ -283,6 +284,8 @@ export default function TDAHNinos() {
           </div>
         </section>
 
+        <AboutMini />
+
         <LocationSection />
 
         <section className="py-16 px-6 bg-card">
@@ -301,7 +304,7 @@ export default function TDAHNinos() {
 
       </main>
       <Footer />
-      <FloatingButtons />
+      <FloatingButtons waMessage="Hola%20Karen,%20vi%20tu%20página%20de%20valoración%20TDAH%20infantil%20y%20me%20gustaría%20agendar%20una%20cita%20para%20mi%20hijo%2Fa" />
     </div>
   );
 }

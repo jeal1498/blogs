@@ -728,7 +728,7 @@ export default function TDAHNinas() {
 
       </main>
       <Footer />
-      <FloatingButtons />
+      <FloatingButtons waMessage="Hola%20Karen,%20leí%20tu%20artículo%20sobre%20TDAH%20en%20niñas%20y%20me%20gustaría%20agendar%20una%20valoración%20para%20mi%20hija" />
     </div>
   );
 }

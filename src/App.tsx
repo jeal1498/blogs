@@ -12,6 +12,8 @@ const TDAHAdultos = lazy(() => import("./pages/TDAHAdultos"));
 const AutismoCancun = lazy(() => import("./pages/AutismoCancun"));
 const BlogCostTDAH = lazy(() => import("./pages/blog/CuantoCuestaValoracionTDAH"));
 const BlogTDAHNinas = lazy(() => import("./pages/blog/TDAHNinas"));
+const BlogIndex = lazy(() => import("./pages/Blog"));
+const AvisoPrivacidad = lazy(() => import("./pages/AvisoPrivacidad"));
 
 const queryClient = new QueryClient();
 
@@ -27,8 +29,10 @@ const App = () => (
             <Route path="/evaluacion-tdah-ninos" element={<TDAHNinos />} />
             <Route path="/evaluacion-tdah-adultos" element={<TDAHAdultos />} />
             <Route path="/evaluacion-autismo-cancun" element={<AutismoCancun />} />
+            <Route path="/blog" element={<BlogIndex />} />
             <Route path="/blog/cuanto-cuesta-valoracion-tdah-cancun" element={<BlogCostTDAH />} />
             <Route path="/blog/tdah-en-ninas-sintomas" element={<BlogTDAHNinas />} />
+            <Route path="/aviso-de-privacidad" element={<AvisoPrivacidad />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

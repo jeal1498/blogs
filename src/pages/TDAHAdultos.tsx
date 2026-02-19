@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import FloatingButtons from '@/components/FloatingButtons';
 import LocationSection from '@/components/LocationSection';
 import SymptomChecker from '@/components/SymptomChecker';
+import AboutMini from '@/components/AboutMini';
 import { applySeo, injectSchema } from '@/lib/seo';
 
 const mitos = [
@@ -314,6 +315,8 @@ export default function TDAHAdultos() {
           </div>
         </section>
 
+        <AboutMini />
+
         <LocationSection />
 
         <section className="py-16 px-6 bg-secondary">
@@ -332,7 +335,7 @@ export default function TDAHAdultos() {
 
       </main>
       <Footer />
-      <FloatingButtons />
+      <FloatingButtons waMessage="Hola%20Karen,%20vi%20tu%20página%20de%20valoración%20TDAH%20adultos%20y%20me%20gustaría%20recibir%20más%20información%20para%20agendar%20una%20cita" />
     </div>
   );
 }

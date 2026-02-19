@@ -20,9 +20,9 @@ const Navbar = () => {
   useEffect(() => { setIsMenuOpen(false); }, [location.pathname]);
 
   const sectionLinks = [
-    { href: '#sobre-mi', label: 'Sobre mí' },
-    { href: '#testimonios', label: 'Testimonios' },
-    { href: '#faq', label: 'FAQ' },
+    { href: '#sobre-mi', label: 'Sobre mí', homeOnly: false },
+    { href: '#testimonios', label: 'Testimonios', homeOnly: true },
+    { href: '#faq', label: 'FAQ', homeOnly: true },
   ];
 
   const valoraciones = [
@@ -32,16 +32,16 @@ const Navbar = () => {
   ];
 
   const handleSectionClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (isHome) {
-      e.preventDefault();
-      const el = document.querySelector(href);
-      el?.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    e.preventDefault();
+    const el = document.querySelector(href);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
     }
-    // If not home, let the browser handle /#section natively
+    setIsMenuOpen(false);
   };
 
-  const sectionHref = (hash: string) => isHome ? hash : `/${hash}`;
+  const sectionHref = (hash: string, homeOnly: boolean) =>
+    homeOnly && !isHome ? `/${hash}` : hash;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 p-4 transition-all duration-300">
@@ -102,13 +102,19 @@ const Navbar = () => {
           {sectionLinks.map((link) => (
             <a
               key={link.href}
-              href={sectionHref(link.href)}
+              href={sectionHref(link.href, link.homeOnly)}
               onClick={(e) => handleSectionClick(e, link.href)}
               className="px-5 py-2 text-xs font-bold uppercase tracking-widest text-primary/70 hover:text-primary hover:bg-secondary rounded-lg transition-all"
             >
               {link.label}
             </a>
           ))}
+          <Link
+            to="/blog"
+            className="px-5 py-2 text-xs font-bold uppercase tracking-widest text-primary/70 hover:text-primary hover:bg-secondary rounded-lg transition-all"
+          >
+            Blog
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
@@ -162,13 +168,19 @@ const Navbar = () => {
             {sectionLinks.map((link) => (
               <a
                 key={link.href}
-                href={sectionHref(link.href)}
+                href={sectionHref(link.href, link.homeOnly)}
                 onClick={(e) => handleSectionClick(e, link.href)}
                 className="text-center p-3 rounded-lg hover:bg-secondary text-sm font-bold uppercase tracking-widest text-primary transition-colors"
               >
                 {link.label}
               </a>
             ))}
+            <Link
+              to="/blog"
+              className="text-center p-3 rounded-lg hover:bg-secondary text-sm font-bold uppercase tracking-widest text-primary transition-colors"
+            >
+              Blog
+            </Link>
             <div className="h-px bg-border my-2" />
             <a
               href="tel:529983211547"

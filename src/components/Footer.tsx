@@ -59,12 +59,6 @@ const Footer = () => {
                 </Link>
               </li>
             ))}
-            <li className="pt-2">
-              <Link to="/#sobre-mi" className="hover:text-primary-foreground hover:translate-x-1 transition-all inline-block">Sobre Karen</Link>
-            </li>
-            <li>
-              <Link to="/#faq" className="hover:text-primary-foreground hover:translate-x-1 transition-all inline-block">Preguntas Frecuentes</Link>
-            </li>
           </ul>
         </div>
 
@@ -72,6 +66,11 @@ const Footer = () => {
         <div className="md:col-span-1">
           <h4 className="font-bold uppercase tracking-widest text-xs mb-6 text-accent-pink">Blog</h4>
           <ul className="space-y-3 text-xs font-medium text-primary-foreground/70">
+            <li>
+              <Link to="/blog" className="hover:text-primary-foreground hover:translate-x-1 transition-all inline-block font-bold">
+                → Ver todos los artículos
+              </Link>
+            </li>
             <li>
               <Link to="/blog/cuanto-cuesta-valoracion-tdah-cancun" className="hover:text-primary-foreground hover:translate-x-1 transition-all inline-block leading-relaxed">
                 ¿Cuánto cuesta una valoración de TDAH en Cancún?
@@ -122,7 +121,11 @@ const Footer = () => {
 
       <div className="max-w-6xl mx-auto pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-primary-foreground/40 uppercase tracking-widest font-bold">
         <p>© 2025 Karen Trujillo | Neuropsicología TDAH y Autismo en Cancún. Todos los derechos reservados.</p>
-        <p>Cédula Federal: 11009616 | Cancún, Quintana Roo</p>
+        <div className="flex items-center gap-4">
+          <Link to="/aviso-de-privacidad" className="hover:text-primary-foreground/70 transition-colors">Aviso de Privacidad</Link>
+          <span>|</span>
+          <p>Cédula Federal: 11009616 | Cancún, Quintana Roo</p>
+        </div>
       </div>
     </footer>
   );
